@@ -791,6 +791,12 @@ body {
     margin-bottom: 50px;
   }
 }
+.owner{
+  text-align: center;
+}
+#ourfoundersection{
+  margin-bottom: 10vw !important;
+}
 .team_section {
   width: 100%;
   float: left;
@@ -804,9 +810,12 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
 }
 .what_taital::after {
   content: "";
+  display: none !important;
   background-color: #ff5a58;
   position: absolute;
   width: 60px;
@@ -826,6 +835,7 @@ body {
   width: 100%;
   float: left;
   text-align: center;
+  margin-bottom: 1vw;
 }.readable_text {
   width: 100%;
   float: left;
