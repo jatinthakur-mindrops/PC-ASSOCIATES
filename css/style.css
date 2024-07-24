@@ -676,11 +676,8 @@ body {
   .gtco-news .owl-carousel .owl-nav {
     display: none !important;
   }
-  .navbar-brand{
-    display: none !important;
-  }
   .navbar>.container{
-    justify-content: end;
+    justify-content: space-between;
   }
 }
 .gtco-news .owl-carousel .owl-nav .owl-prev, .gtco-news .owl-carousel .owl-nav .owl-next {
@@ -921,7 +918,4 @@ body {
   font-size: 15px;
   color: #fffcf4;
   /* margin-bottom: 0.4vw; */
-}
-#my-nav{
-  background-color: white !important;
 }
