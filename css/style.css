@@ -922,3 +922,6 @@ body {
   color: #fffcf4;
   /* margin-bottom: 0.4vw; */
 }
+#my-nav{
+  background-color: white !important;
+}
