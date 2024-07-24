@@ -676,6 +676,12 @@ body {
   .gtco-news .owl-carousel .owl-nav {
     display: none !important;
   }
+  .navbar-brand{
+    display: none !important;
+  }
+  .navbar>.container{
+    justify-content: end;
+  }
 }
 .gtco-news .owl-carousel .owl-nav .owl-prev, .gtco-news .owl-carousel .owl-nav .owl-next {
   font-size: 120px;
@@ -789,6 +795,9 @@ body {
 @media (max-width: 991px) {
   #gtco-footer .col-lg-6 {
     margin-bottom: 50px;
+  }
+  .nav-item a{
+    color: black !important;
   }
 }
 .owner{
