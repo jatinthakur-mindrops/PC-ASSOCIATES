@@ -697,6 +697,7 @@ body {
   }
   .navbar > .container {
     justify-content: space-between;
+    padding: 0vw 3vw;
   }
 }
 .gtco-news .owl-carousel .owl-nav .owl-prev,
