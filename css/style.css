@@ -162,6 +162,9 @@ body {
     width: 100%;
     height: 400px;
   }
+  .navbar > .container {
+    padding: 0 3vw;
+  }
   #gtco-main-nav::after,
   #gtco-main-nav::before {
     background: none;
