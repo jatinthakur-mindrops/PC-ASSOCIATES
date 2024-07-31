@@ -957,3 +957,40 @@ body {
   color: #fffcf4;
   /* margin-bottom: 0.4vw; */
 }
+.team-members{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.team-members .submit-button{
+  background-image: -webkit-linear-gradient(0deg, #06c6f9 0%, #38eaf9 100%);
+  background-image: -ms-linear-gradient(0deg, #06c6f9 0%, #38eaf9 100%);
+  font-size: 18px;
+  font-family: "OpenSans-Semibold";
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none !important;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 900px !important;
+      margin: 1.75rem auto !important;
+      align-items: center;
+  }
+}
+.modal-content{
+  margin-top: 4vw;
+}
+.modal-body{
+  text-align: justify;
+}
+@media (max-width:575px){
+  .team-members{
+    margin-bottom: 10vw;
+  }
+}
