@@ -775,7 +775,7 @@ body {
 #gtco-footer input:-ms-input-placeholder,
 #gtco-footer input:-moz-placeholder,
 #gtco-footer textarea::-webkit-input-placeholder,
-#gtco-footer textarea::-moz-placeholder,
+#gtco-gtco-footer textarea::-moz-placeholder,
 #gtco-footer textarea:-ms-input-placeholder,
 #gtco-footer textarea:-moz-placeholder {
   color: #999999;

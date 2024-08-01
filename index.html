@@ -244,7 +244,7 @@ style="margin-bottom: 3vw"
 id="ourfoundersection"
 >
 <div class="container">
-  <h1 class="what_taital">Our FOUNDER</h1>
+  <h1 class="what_taital">Our FOUNDERS</h1>
   <!-- <p class="what_text_1">
     It is a long established fact that a reader will be distracted by the
     readable content of a
@@ -306,7 +306,7 @@ id="ourfoundersection"
         <div class="col-lg-3 col-sm-12  team-members">
             <img src="images/prakash.png" class="image_7" style="border-radius: 50%;"/>
                 <p>Prakash Kandpal</p>
-                <p>CMA</p>
+                <p>ACMA</p>
                 <p>8 Years of Experience</p>
                 <a href="#" class="submit-button moremore_bt_1"  
                 data-toggle="modal"
@@ -336,7 +336,7 @@ id="ourfoundersection"
                       </div>
                       <div class="modal-body">
                         <p>
-                            Prakash is a CMA with 5 years of distinguished expertise in financial field and legal activities, GST Appeal, Income Tax Appeal and corporate finance, including corporate litigation. He has a general understanding of the organisation's strategic objectives and strategies, as well as the capacity to make accurate judgments in conflict situations for the betterment of the organisation.
+                            Prakash is a ACMA with 8 years of distinguished expertise in financial field and legal activities, GST Appeal, Income Tax Appeal and corporate finance, including corporate litigation. He has a general understanding of the organisation's strategic objectives and strategies, as well as the capacity to make accurate judgments in conflict situations for the betterment of the organisation.
                         </p>
                         <p>
                             He has the ability to work with merchant brokers, auditors, and legal counsel. Prakash has extensive experience in managing litigation matters and converting governance theory into relevant frameworks and processes.
@@ -358,7 +358,7 @@ id="ourfoundersection"
         <div class="col-lg-3 col-sm-12  team-members">
             <img src="images/rohit.jpeg" class="image_7" style="border-radius: 50%;"/>
                 <p>Rohit Papney</p>
-                <p>Partner</p>
+                <p style="min-height: 25px;">&nbsp;</p>
                 <p>4 year of experience</p>
                 <a href="#" class="submit-button moremore_bt_1"  
                 data-toggle="modal"
@@ -442,7 +442,7 @@ id="ourfoundersection"
                       </div>
                       <div class="modal-body">
                         <p>
-                            Bringing 3+ years of extensive experience collecting and analyzing figures to assist in the selection and management of company investments, as well as budgeting and strategizing activities.
+                            Bringing 5+ years of extensive experience collecting and analyzing figures to assist in the selection and management of company investments, as well as budgeting and strategizing activities.
                         </p>
                         <p>
                             He has a Solid understanding of basic and advanced accounting and financial principles and practices. Innate leadership abilities, a proactive attitude, and broad knowledge of accounting software and processes are required.
@@ -490,6 +490,8 @@ id="ourfoundersection"
     </div>
   </div>
 </div>
+
+
 
 
 <!-- customer section  -->
@@ -694,13 +696,18 @@ id="ourfoundersection"
 <footer class="container-fluid" id="gtco-footer">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6" >
-                <h4> Contact Us </h4>
-                <input type="text" class="form-control" placeholder="Full Name">
-                <input type="email" class="form-control" placeholder="Email Address">
-                <textarea class="form-control" placeholder="Message"></textarea>
-                <a href="#" class="submit-button">Submit<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-            </div>
+            
+                <div class="col-lg-6">
+                    <h4>Contact Us</h4>
+                    <input type="text" class="form-control" placeholder="Full Name" name="from_name" id="from_name">
+                    <input type="email" class="form-control" placeholder="Email Address" name="from_email" id="from_email">
+                    <textarea class="form-control" placeholder="Message" name="from_message" id="from_message"></textarea>
+                    <button style="border: none;" type="submit" class="submit-button" id="submit-btn">
+                        Submit<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+           
+            
             <div class="col-lg-6">
                 <div class="map-responsive">
                     <!-- <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -768,6 +775,9 @@ id="ourfoundersection"
 <script src="js/bootstrap.min.js"></script>
 <!-- owl carousel js-->
 <script src="owl-carousel/owl.carousel.min.js"></script>
-<script src="js/main.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script src="script.js"></script>
 </body>
 </html>
