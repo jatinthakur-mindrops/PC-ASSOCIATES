@@ -17,14 +17,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <title>Pc & Associates</title>
-    <style>
-
-    </style>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
-    <div class="container"><a href="/" class="navbar-brand">Pc & Associates</a>
+    <div class="icma-mobile">
+        <img src="images/icmalogo.jpeg" alt="" class="icmamobile">
+    </div>
+    <div class="container">
+        <div>
+            <img src="images/icmalogo.jpeg" alt="" class="icmalogo">
+        </div>
+    <a href="/" class="navbar-brand">Pc & Associates</a>
         <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span
                 class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
         <div id="my-nav" class="collapse navbar-collapse">
@@ -238,11 +245,7 @@
 
 <!-- founder section -->
 
-<div
-class="team_section layout_padding"
-style="margin-bottom: 3vw"
-id="ourfoundersection"
->
+<div class="team_section layout_padding" style="margin-bottom: 3vw" id="ourfoundersection">
 <div class="container">
   <h1 class="what_taital">Our FOUNDERS</h1>
   <!-- <p class="what_text_1">
@@ -491,8 +494,48 @@ id="ourfoundersection"
   </div>
 </div>
 
+<!-- Our clients section  -->
 
+<section class="ftco-sectio ftco-no-pt bg-light ftco-faqs">
+    <div class="container">
+        <div class="row justify-content-center pb-6 mb-3">
 
+            <div class="col-md-7 heading-section text-center ftco-animate fadeInUp ftco-animated">
+                <!-- <span class="subheading">Clientele</span> -->
+                <h2 style="font-size: 34px;
+    color: #060606; font-weight: 600;">Our Clients</h2>
+            </div>
+        </div>
+        <div class="clientele">
+        
+        <div class="clientele-item">
+            <img src="images/1.webp" alt="logo of qzaark" title="Techtropolis Private Limited">
+        </div>
+        <div class="clientele-item">
+            <img src="images/2.webp" alt="logo of CENTRAL COUNCIL FOR RESEARCH IN AYURVEDIC SCIENCES   " title="Star Fox India Ventures Pvt. Ltd">
+        </div>
+        <div class="clientele-item">
+            <img src="images/3.webp" alt="logo of Supreme Field Developers" title="Appliance Love">
+        </div>
+        <div class="clientele-item">
+            <img src="images/4.webp" alt="logo of Techtropolish" title="India Aircon">
+        </div>
+        <!-- <div class="clientele-item"><img src="images/logos/mineshaft.jpg" alt="logo of mineshaft" title="Mineshaft"></div> -->
+        <div class="clientele-item">
+            <img src="images/5.webp" alt="logo of Acsion Engineering" title="Creative Nexus">
+        </div>
+        <div class="clientele-item">
+            <img src="images/7.webp" alt="logo of Ascotel India" title="Kapair Infotech Pvt. Ltd">
+        </div>
+        <div class="clientele-item">
+            <img src="images/8.webp" alt="logo of Ayodhya Projects Pvt Ltd" title="BVG Panels Pvt. Ltd">
+        </div>
+        <div class="clientele-item"><img src="images/9.webp" alt="logo of Brown &amp; White Monkey" title="Interior Concepts"></div>
+        <div class="clientele-item"><img src="images/10.webp" alt="logo of Kamla Sports" title="Book By Construction"></div>
+        <div class="clientele-item"><img src="images/11.webp" alt="logo of Magnifico Infratech" title="BK Industries"></div>
+</div>
+    </div>
+</section>
 
 <!-- customer section  -->
 
@@ -691,6 +734,20 @@ id="ourfoundersection"
     </div>
 </div> -->
 
+                        <!-- toast box -->
+<!-- 
+    <div class="buttons">
+        <button onclick="showtoast(successmsg)">Success</button>
+        <button onclick="showtoast(errormsg)">Error</button>
+        <button onclick="showtoast(invalidmsg)">Invalid</button>
+    </div>
+
+
+    <div id="toastBox">
+
+    </div> -->
+
+                
 <!-- footer section -->
 
 <footer class="container-fluid" id="gtco-footer">
@@ -699,12 +756,16 @@ id="ourfoundersection"
             
                 <div class="col-lg-6">
                     <h4>Contact Us</h4>
-                    <input type="text" class="form-control" placeholder="Full Name" name="from_name" id="from_name">
-                    <input type="email" class="form-control" placeholder="Email Address" name="from_email" id="from_email">
-                    <textarea class="form-control" placeholder="Message" name="from_message" id="from_message"></textarea>
-                    <button style="border: none;" type="submit" class="submit-button" id="submit-btn">
-                        Submit<i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </button>
+                    <form id="contact-us-form" method="POST">
+                        <input type="text" class="form-control" placeholder="Full Name" name="full-name" id="full-name">
+                        <input type="email" class="form-control" placeholder="Email Address" name="email" id="email">
+                        <textarea class="form-control" placeholder="Message" name="from_message" id="from_message"></textarea>
+                        <div class="h-captcha" data-sitekey="cf8ae902-002a-4d4c-849c-81a023dc5fec"></div>
+                        <button style="border: none;" type="submit" class="submit-button" id="submit-btn">
+                            Submit<i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <div id="spinner" class="spinner-border text-primary" style="display:none;"></div>
+                        </button>
+                    </form>
                 </div>
            
             
@@ -726,6 +787,7 @@ id="ourfoundersection"
         </div>
     </div>
 </footer>
+
 
 <!-- foooter part 2 -->
 

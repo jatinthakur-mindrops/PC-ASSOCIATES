@@ -99,7 +99,7 @@ body {
   font-family: "OpenSans-Regular";
   font-size: 18px;
   color: #666666;
-  padding: 5px 15px !important;
+  padding: 5px 10px !important;
   text-transform: uppercase;
 }
 #gtco-main-nav form a {
@@ -992,5 +992,123 @@ body {
 @media (max-width:575px){
   .team-members{
     margin-bottom: 10vw;
+  }
+}
+
+#toastBox{
+  position: absolute;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+.toast{
+  width: 400px;
+  height: 80px;
+  background-color: #fff;
+  color: black;
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  transform: translateX(100%);
+  animation: moveleft 0.5s linear forwards;
+}
+@keyframes moveleft{
+  100%{
+    transform: translateX(0);
+  }
+}
+.toast i{
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+
+}
+
+.toast.error i{
+  color: red;
+}
+.toast.invalid i{
+  color: orange;
+}
+.toast::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: green;
+  animation: anim 5s linear forwards;
+}
+@keyframes anim {
+  100%{
+    width: 0;
+  }
+}
+.toast.error::after{
+  background-color: red;
+}
+.toast.invalid::after{
+  background-color: orange;
+}
+.ftco-sectio {
+  padding: 4em 0;
+}
+.clientele {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.clientele .clientele-item {
+  overflow: hidden;
+  transition: all 0.3s;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  flex-basis: 130px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+.clientele-item img {
+  margin-inline: auto;
+  height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: contain;
+}
+
+.icmalogo{
+  width: 6rem;
+  padding-bottom: 0.8vw;
+  margin-right: 1vw;
+}
+.icmamobile{
+  width: 6rem;
+  padding-bottom: 0.8vw;
+  margin-right: 1vw;
+}
+@media (max-width:768px){
+  .icma-mobile{
+    display: block;    
+  }
+  .icmalogo{
+    display: none;
+  }
+}
+@media (min-width:768px){
+  .icma-mobile{
+    display: none;    
+  }
+  .icmalogo{
+    display: block;
   }
 }
